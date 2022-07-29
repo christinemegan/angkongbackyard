@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: set.ma
-//Last modified: Thu, Jul 28, 2022 07:38:07 PM
+//Last modified: Thu, Jul 28, 2022 07:53:54 PM
 //Codeset: 1252
 file -rdi 1 -ns "roof_structure" -rfn "roof_structureRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/roof_structure.ma";
@@ -120,7 +120,6 @@ file -rdi 1 -ns "cooler4" -rfn "coolerRN4" -op "v=0;" -typ "mayaAscii" "C:/Users
 file -rdi 1 -ns "water_jug2" -rfn "water_jugRN2" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
 file -rdi 1 -ns "water_jug3" -rfn "water_jug2RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
-file -rdi 1 -ns "table" -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/bookstore_proj/library_proj/assets/long_window_desk.ma";
 file -rdi 1 -ns "water_jug4" -rfn "water_jug3RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
 file -rdi 1 -ns "water_jug5" -rfn "water_jug4RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
 file -rdi 1 -ns "cooler5" -rfn "cooler4RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/cooler.ma";
@@ -196,6 +195,7 @@ file -rdi 1 -ns "cardboard_sign9" -rfn "cardboard_sign8RN" -typ "mayaAscii"
 		 "C:/Users/chris/Desktop/personal_art/angkongbackyard/philippines_laundry_proj//assets/cardboard_sign.ma";
 file -rdi 1 -ns "cans_LATEST1" -rfn "cans_LATESTRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/chris/Desktop/personal_art/angkongbackyard/philippines_laundry_proj//assets/cans_LATEST.ma";
+file -rdi 1 -ns "table1" -rfn "tableRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/angkongbackyard/philippines_laundry_proj//assets/table.ma";
 file -r -ns "roof_structure" -dr 1 -rfn "roof_structureRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/roof_structure.ma";
 file -r -ns "sink" -dr 1 -rfn "sinkRN" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/sink.ma";
@@ -260,7 +260,6 @@ file -r -ns "cooler3" -dr 1 -rfn "coolerRN3" -op "v=0;" -typ "mayaAscii" "C:/Use
 file -r -ns "cooler4" -dr 1 -rfn "coolerRN4" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/cooler.ma";
 file -r -ns "water_jug2" -dr 1 -rfn "water_jugRN2" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
 file -r -ns "water_jug3" -dr 1 -rfn "water_jug2RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
-file -r -ns "table" -dr 1 -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/bookstore_proj/library_proj/assets/long_window_desk.ma";
 file -r -ns "water_jug4" -dr 1 -rfn "water_jug3RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
 file -r -ns "water_jug5" -dr 1 -rfn "water_jug4RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/water_jug.ma";
 file -r -ns "cooler5" -dr 1 -rfn "cooler4RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/philippines_laundry_proj//assets/cooler.ma";
@@ -329,6 +328,7 @@ file -r -ns "cardboard_sign8" -dr 1 -rfn "cardboard_sign7RN" -typ "mayaAscii" "C
 file -r -ns "cardboard_sign9" -dr 1 -rfn "cardboard_sign8RN" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/angkongbackyard/philippines_laundry_proj//assets/cardboard_sign.ma";
 file -r -ns "cans_LATEST1" -dr 1 -rfn "cans_LATESTRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/chris/Desktop/personal_art/angkongbackyard/philippines_laundry_proj//assets/cans_LATEST.ma";
+file -r -ns "table1" -dr 1 -rfn "tableRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/chris/Desktop/personal_art/angkongbackyard/philippines_laundry_proj//assets/table.ma";
 requires maya "2020";
 requires "stereoCamera" "10.0";
 requires -nodeType "rmanVolumeAggregateSet" "rfm_volume_aggregate_set.py" "1.0";
@@ -345,22 +345,22 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19043)\n";
-fileInfo "UUID" "E096A9B2-4209-B86B-3CE5-1ABC6C05120E";
+fileInfo "UUID" "5C4191EB-4F1F-57A5-C3A7-DF9E153C968D";
 createNode transform -s -n "persp";
 	rename -uid "6B95B695-4A07-87DD-5873-6A86EBD8EE38";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 98.335765083127995 40.103901211999343 21.22018181137225 ;
-	setAttr ".r" -type "double3" -21.33835248211285 2620.1999999985915 0 ;
+	setAttr ".t" -type "double3" 87.222354113653168 37.459573137805073 20.251823908600102 ;
+	setAttr ".r" -type "double3" -24.338352482131796 2628.5999999985643 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A36F43A2-453B-7D73-41B1-0387AA01E57C";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 86.737683773676778;
+	setAttr ".coi" 77.325623778745225;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -1.8127067171687417 2.8347371578706433 104.59522401991013 ;
+	setAttr ".tp" -type "double3" -1.0549444666813326 4.3429033254477583 -5.6235315809772572 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dgm" no;
 	setAttr ".ai_translator" -type "string" "perspective";
@@ -12016,7 +12016,7 @@ createNode transform -n "slanted_pants";
 createNode transform -n "white_chairs";
 	rename -uid "93B77F53-434E-B67E-0ADF-4ABCC0AA3E9B";
 createNode fosterParent -n "shedRNfosterParent1";
-	rename -uid "2DA0A81C-41CE-7C75-B22E-149E6ED27FE4";
+	rename -uid "EE5705C2-483E-222D-AE71-46BE00C91CE7";
 createNode transform -n "shed_step" -p "shedRNfosterParent1";
 	rename -uid "17408A6D-4E5A-DCBB-A615-C5A9D7B71D84";
 	setAttr ".t" -type "double3" 11.78747042661953 0.16138802534401483 10.65579847062007 ;
@@ -12064,7 +12064,7 @@ createNode mesh -n "shed_stepShape" -p "shed_step";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "clothsRNfosterParent1";
-	rename -uid "0B8B6D7F-4B00-923F-7A2F-05893F55319E";
+	rename -uid "50F3751E-4D02-F1A7-E72B-C2BF4FC797F4";
 createNode transform -n "cloth1" -p "clothsRNfosterParent1";
 	rename -uid "7A7381C5-4AFC-4B86-CC1D-8593A852B64B";
 	setAttr ".v" no;
@@ -12074,7 +12074,7 @@ createNode transform -n "cloth1" -p "clothsRNfosterParent1";
 	setAttr ".rpt" -type "double3" 3.7192471324942744e-15 0 4.4408920985006262e-16 ;
 	setAttr ".sp" -type "double3" 31.982165336608887 6.5018794536590576 1.8748584985733032 ;
 createNode fosterParent -n "shirtsRNfosterParent1";
-	rename -uid "69CCF65F-4114-64E2-B18B-EF97AAD449DF";
+	rename -uid "FC4F2A9B-4710-3040-75DD-D9A7246EED31";
 createNode transform -n "tank_top1" -p "shirtsRNfosterParent1";
 	rename -uid "799D0F66-4873-6CF4-943A-6A83630773CF";
 	setAttr ".v" no;
@@ -12393,8 +12393,8 @@ createNode rmanVolumeAggregateSet -n "globalVolumeAggregate2";
 lockNode -l 1 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "FA70FE71-4BA6-5D43-6967-74A3E32559AE";
-	setAttr -s 38 ".lnk";
-	setAttr -s 38 ".slnk";
+	setAttr -s 43 ".lnk";
+	setAttr -s 43 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "C9D3E790-4BDC-B902-B101-07AF3A694ECD";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
@@ -15029,25 +15029,6 @@ createNode reference -n "water_jug2RN";
 		
 		2 "|water_jugs|water_jug3:water_jug" "rotate" " -type \"double3\" -119.92053687771658588 2.37979577007233445 87.9588426446045446";
 lockNode -l 1 ;
-createNode reference -n "tableRN";
-	rename -uid "B663E6DA-4F56-93C3-83C6-53B8EB100A73";
-	setAttr ".fn[0]" -type "string" "C:/Users/chris/Desktop/personal_art/bookstore_proj/library_proj/assets/table.ma";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"tableRN"
-		"tableRN" 1
-		2 "|table:table" "translate" " -type \"double3\" 11.30942448052203098 5.96867763533884776 0"
-		
-		"tableRN" 5
-		2 "|table:long_desk" "translate" " -type \"double3\" -7.25894496186877003 5.44043606482066799 -17.68639171937310195"
-		
-		2 "|table:long_desk" "rotate" " -type \"double3\" 0 0 4.38045845674882184"
-		
-		2 "|table:long_desk" "scale" " -type \"double3\" 1.36224586890484223 2.57086128754628218 4.42112270760827197"
-		
-		2 "|table:long_desk|table:long_deskShape" "dispResolution" " 3"
-		2 "|table:long_desk|table:long_deskShape" "displaySmoothMesh" " 2";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "water_jug3RN";
 	rename -uid "109D7338-413C-607B-705A-C98C176A4106";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -16284,7 +16265,10 @@ createNode reference -n "cans_LATESTRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"cans_LATESTRN1"
 		"cans_LATESTRN1" 0
-		"cans_LATESTRN1" 26
+		"cans_LATESTRN1" 29
+		2 "|cans_LATEST1:cans" "translate" " -type \"double3\" 0 0 0"
+		2 "|cans_LATEST1:cans" "rotate" " -type \"double3\" 0 0 0"
+		2 "|cans_LATEST1:cans" "scale" " -type \"double3\" 1 1 1"
 		2 "|cans_LATEST1:cans|cans_LATEST1:can" "translate" " -type \"double3\" 50.54660208692473589 0.45578830323963626 16.09971166461902214"
 		
 		2 "|cans_LATEST1:cans|cans_LATEST1:can" "rotate" " -type \"double3\" 86.95517648997659421 -5.29976944473406153 70.15420522735171005"
@@ -16338,6 +16322,19 @@ createNode reference -n "cans_LATESTRN1";
 		2 "|cans_LATEST1:cans|cans_LATEST1:can8" "scale" " -type \"double3\" 3.30152453067231821 3.30152453067231821 3.30152453067231821";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "tableRN1";
+	rename -uid "6F7BB531-4653-06F1-27BE-BC80F535993D";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"tableRN1"
+		"tableRN1" 0
+		"tableRN1" 3
+		2 "|table1:long_desk" "translate" " -type \"double3\" -7.25894496186877003 5.44043606482066799 -17.68639171937310195"
+		
+		2 "|table1:long_desk" "rotate" " -type \"double3\" 0 0 4.38045845674882184"
+		
+		2 "|table1:long_desk" "scale" " -type \"double3\" 1.36224586890484223 2.57086128754628218 4.42112270760827197";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -16359,7 +16356,7 @@ select -ne :postProcessList1;
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 6 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 426 ".r";
+	setAttr -s 445 ".r";
 select -ne :lightList1;
 	setAttr -s 7 ".l";
 select -ne :defaultTextureList1;
@@ -16475,7 +16472,6 @@ connectAttr "sharedReferenceNode.sr" "water_jugRN.sr";
 connectAttr "sharedReferenceNode.sr" "water_jugRN1.sr";
 connectAttr "sharedReferenceNode.sr" "water_jugRN2.sr";
 connectAttr "sharedReferenceNode.sr" "water_jug2RN.sr";
-connectAttr "sharedReferenceNode.sr" "tableRN.sr";
 connectAttr "sharedReferenceNode.sr" "water_jug3RN.sr";
 connectAttr "sharedReferenceNode.sr" "water_jug4RN.sr";
 connectAttr "sharedReferenceNode.sr" "water_jug5RN.sr";
@@ -16516,6 +16512,11 @@ connectAttr "sharedReferenceNode.sr" "mid_cut_shirtRN1.sr";
 connectAttr "sharedReferenceNode.sr" "pantsRN.sr";
 connectAttr "sharedReferenceNode.sr" "crateRN2.sr";
 connectAttr "sharedReferenceNode.sr" "crate2RN.sr";
+connectAttr "sharedReferenceNode.sr" "cardboard_signRN4.sr";
+connectAttr "sharedReferenceNode.sr" "cardboard_sign5RN.sr";
+connectAttr "sharedReferenceNode.sr" "cardboard_sign6RN.sr";
+connectAttr "sharedReferenceNode.sr" "cardboard_sign7RN.sr";
+connectAttr "sharedReferenceNode.sr" "cardboard_sign8RN.sr";
 connectAttr "PxrSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "PxrSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "PxrSurface3SG.pa" ":renderPartition.st" -na;
